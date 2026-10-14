@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; style-src &#39;self&#39; https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src &#39;self&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+<!-- frame-ancestors is left out of the policy above: a browser ignores it in a meta tag, and GitHub Pages sends no header of our choosing. -->
+<title>Start here</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;1,400&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="guide.css">
+</head>
+<body>
+<main class="guide">
+<h1 id="start-here">Start here</h1>
+<p>This page is for you if you want to make an app (or a website, or a game) and
+you have never written code, the written instructions a program is made of. You
+will not need to learn to. Claude, an artificial intelligence assistant made by
+the company Anthropic, does the building; your job is to know what you want and
+to answer its questions. It will ask a lot of them at first, because a good plan
+is the difference between an app you love and one you have to start over.</p>
+<p>Expect setting up to take one to two hours, in one sitting if you can. After
+that, Claude asks about your idea over several short sittings across a few days,
+sized to the time you tell it you have. You can stop at any point and pick up
+where you left off.</p>
+<p>The project starter, the ready-made beginning of a project that this page
+belongs to, is private: it is kept on GitHub (a free website that keeps projects
+safe online, which you join in step 4), and only the people its owner has
+invited can see it. If you open its address before you are invited, GitHub shows
+a page saying <strong>Page not found</strong>, the same page it shows for an address that
+does not exist. That only means you have not been added yet; step 4 says how.</p>
+<p>Every step below says what you should see on your screen. If what you see is a
+little different, that is usually fine: websites change their wording now and
+then, so look for the closest match. From step 1 on, you can also ask Claude at
+<a href="https://claude.ai">claude.ai</a>: describe what you see, or paste a picture of
+your screen, and ask what to do.</p>
+<h2 id="what-you-need-before-you-begin">What you need before you begin</h2>
+<ul>
+<li><strong>A computer</strong> running Windows 10 or 11, or a Mac. A phone or a tablet is not
+enough to build on, though you can follow along on one later.</li>
+<li><strong>An email address</strong> you can open, to confirm new accounts.</li>
+<li><strong>To be old enough</strong>: 18 or older for a Claude account (Anthropic&#39;s consumer
+terms, read on 2026-10-13), and 13 or older for a GitHub account (GitHub&#39;s
+terms of service, read on 2026-10-13).</li>
+<li><strong>A paid Claude plan</strong> (Pro or Max) at <a href="https://claude.ai">claude.ai</a>. The
+free plan does not include Claude Code, the part of Claude that builds things
+on your own computer. On 2026-10-13, Anthropic&#39;s pricing page
+(<a href="https://claude.com/pricing">claude.com/pricing</a>) listed Pro at 20 US dollars
+a month and Max from 100 US dollars a month. Prices change, and the page where
+you pay shows the price before you pay.</li>
+<li><strong>Permission from whoever gave you this page</strong>: they add your GitHub account
+to the project starter so that you can see it, and Claude copies it to begin
+yours.</li>
+</ul>
+<p>Everything else is free, and Claude will tell you before anything would cost
+money.</p>
+<h2 id="step-1-get-a-claude-account">Step 1: get a Claude account</h2>
+<ol>
+<li>Go to <a href="https://claude.ai">claude.ai</a> and sign up. The page asks for your
+email address, or offers to use a Google or Apple account instead. Claude
+then sends you an email to confirm the address: open it and follow what it
+says.</li>
+<li>Know three things about the plan before you pay:
+<ul>
+<li><strong>It renews every month</strong>, and is charged each time, until you cancel. To
+cancel, open claude.ai, click your name or initials at the bottom left,
+choose <strong>Settings</strong>, then <strong>Billing</strong>, and press <strong>Cancel</strong>. The plan keeps
+working until the end of the month you already paid for.</li>
+<li><strong>Its allowance is shared.</strong> What you use on claude.ai and what Claude uses
+building your project come out of the same allowance.</li>
+<li><strong>The allowance can run out in the middle of a conversation.</strong> Claude then
+says when you can go on. Nothing you have done is lost: come back at that
+time and carry on.</li>
+</ul></li>
+<li>Choose the <strong>Pro</strong> or <strong>Max</strong> plan. If you are not offered a plan straight
+away, look for an option to upgrade in your account&#39;s settings. The page asks
+for a payment card; this is the one step on this page that costs money. Max
+lasts longer each day before it asks you to wait; Pro is enough to begin.</li>
+</ol>
+<p>You know this step worked when claude.ai shows a page with a box for writing a
+message to Claude, and your account&#39;s settings show Pro or Max as your plan.</p>
+<h2 id="step-2-install-visual-studio-code">Step 2: install Visual Studio Code</h2>
+<p>To install a program is to copy it onto your computer so that it can run there,
+the way you add an app to a phone. Visual Studio Code (you may see it shortened
+to &quot;VS Code&quot;) is a free program from Microsoft. Think of it as the workshop: it
+shows the files of your project on the left and a conversation with Claude on
+the right.</p>
+<ol>
+<li>In your web browser (the program you use to visit websites), go to
+<a href="https://code.visualstudio.com">code.visualstudio.com</a> and press the big
+download button. The site picks the right version for your computer. The
+browser shows the file as it downloads, usually near the top right or the
+bottom of its window, and puts it in your <strong>Downloads</strong> folder.</li>
+<li><strong>On Windows:</strong> open the downloaded file. Its name begins with
+<code>VSCodeUserSetup</code>.
+<ul>
+<li>A setup window for Visual Studio Code opens. It leads you through a few
+pages, each with a <strong>Next</strong> button at the bottom.</li>
+<li>The first page is the license agreement, the terms for using the program.
+<strong>I do not accept the agreement</strong> is chosen at first: choose <strong>I accept the
+agreement</strong>, then press <strong>Next</strong>. On every page after that, keep the
+choices already made.</li>
+<li>One page has a box labeled <strong>Add to PATH (requires shell restart)</strong>. Leave
+it ticked. PATH is the list of places where Windows looks for programs, and
+this lets Claude find Visual Studio Code later.</li>
+<li>Press <strong>Install</strong>, and wait for the bar to fill. The last page has a box
+ticked to launch Visual Studio Code: leave it, and press <strong>Finish</strong>.</li>
+<li>It never asks for an administrator password (the password some computers
+ask for before a change that affects everyone who uses them), and that is
+on purpose: this version installs for you alone.</li>
+</ul></li>
+<li><strong>On a Mac:</strong> open <strong>Finder</strong>, the Mac&#39;s window for browsing files: the
+smiling blue face in the row of icons along the bottom of the screen.
+<ul>
+<li>Click <strong>Downloads</strong> in the left column of the Finder window. The download
+is there as <strong>Visual Studio Code</strong>. If you see a file ending in <code>.zip</code>
+instead, double-click it, and the program appears beside it.</li>
+<li>Drag <strong>Visual Studio Code</strong> onto <strong>Applications</strong> in the left column.</li>
+<li>Click <strong>Applications</strong>, and double-click <strong>Visual Studio Code</strong>. Your Mac
+asks whether you are sure you want to open a program downloaded from the
+internet. Choose <strong>Open</strong>.</li>
+</ul></li>
+<li>Open Visual Studio Code if it is not open already. On Windows, press the
+Start button and type <strong>Visual Studio Code</strong>; on a Mac, it is in
+<strong>Applications</strong>.</li>
+<li>The first time, a window titled <strong>Welcome to VS Code</strong> offers to sign you in
+to GitHub Copilot, Microsoft&#39;s own assistant. You do not need it: Claude is
+your assistant here. Choose <strong>Continue without Signing In</strong> at its bottom
+right, then <strong>Get Started</strong> on the page about colors.</li>
+<li>Visual Studio Code is now a window, usually dark, with a column of small
+icons down its left edge and a <strong>Welcome</strong> page in the middle. You can close
+the welcome page with the <strong>×</strong> on its tab. A panel on the right titled
+<strong>Chat</strong> belongs to GitHub Copilot, not to Claude: do not type in it. You can
+close it with the <strong>×</strong> at its top right.</li>
+</ol>
+<h2 id="step-3-add-claude-to-visual-studio-code">Step 3: add Claude to Visual Studio Code</h2>
+<p>An extension is an add-on that gives Visual Studio Code a new ability. Claude
+Code is one.</p>
+<ol>
+<li>On the far left of Visual Studio Code there is a column of icons. Click the
+one that looks like <strong>four small squares, with one of them set apart</strong>. A
+panel titled <strong>Extensions</strong> opens beside the column, with a search box at its
+top.</li>
+<li>In that search box, type <strong>Claude Code</strong>. A list of results appears under it.
+Several have Claude in their names, and most are made by other people.</li>
+<li>Choose <strong>Claude Code for VS Code</strong>, whose publisher, written under its name,
+is <strong>Anthropic</strong> with a small blue tick, and press its <strong>Install</strong> button.
+Visual Studio Code asks whether you trust the publisher Anthropic: press
+<strong>Trust Publisher &amp; Install</strong>. After a few seconds a page titled <strong>Get
+started with Claude Code</strong> opens.</li>
+<li>A Claude icon, a star with many points, appears in the column on the left.
+Click it, and a Claude panel opens and asks how you want to log in. Choose
+<strong>Claude.ai Subscription</strong>, your Claude account from step 1. Visual Studio
+Code asks whether to open the external website: press <strong>Open</strong>. Your browser
+opens claude.ai, asks you to log in if you are not already, and then asks
+whether to allow Visual Studio Code to use your account; allow it, then come
+back to Visual Studio Code.</li>
+</ol>
+<p>You know this step worked when the Claude panel shows a box at its bottom where
+you can type a message. Do not type anything yet.</p>
+<h2 id="step-4-make-a-github-account">Step 4: make a GitHub account</h2>
+<p>GitHub is a website that keeps a copy of your project safe online, with every
+version of it, so nothing you make can be lost if your computer is. It is free.</p>
+<ol>
+<li>Go to <a href="https://github.com/signup">github.com/signup</a>. The page asks for your
+email address, a password, a username, and your country, or offers to
+continue with a Google or Apple account instead. The password needs at least
+15 characters, or at least 8 with a number and a small letter among them.
+Pick a username you would not mind a stranger reading: everyone who sees your
+project sees it. The page tells you at once if a username is already taken.
+Then press <strong>Create account</strong>.</li>
+<li>GitHub shows a small puzzle to prove a person is signing up. It can take two
+or three tries; that is normal, not a mistake on your part.</li>
+<li>GitHub emails you a code. Type it on the page that asks for it. If nothing
+arrives within five minutes, look in your spam folder.</li>
+<li>GitHub may ask how you plan to use it, and offer a paid plan. You can skip
+the questions, and the free plan is all you need.</li>
+<li>Send your new GitHub username to the person who gave you this page, and wait
+until they say they have added you. GitHub also sends you an email inviting
+you to the project starter; accept it if it arrives.</li>
+</ol>
+<p>You know this step worked when GitHub shows your home page, with a small round
+picture for your account at the top right.</p>
+<h2 id="step-5-make-a-folder-for-your-project">Step 5: make a folder for your project</h2>
+<ol>
+<li>Make a folder named <code>dev</code> in your own folder, the one named after you, and
+inside it a new, empty folder for your project, using small letters and
+dashes instead of spaces. Any short name will do, even before your idea has a
+name, and it can be changed later; your project on GitHub takes the same
+name. For example: <code>C:\Users\&lt;your name&gt;\dev\family-recipes</code> on Windows, or
+<code>family-recipes</code> in <code>dev</code> in your home folder on a Mac. Not in <strong>Documents</strong>
+or on the <strong>Desktop</strong>: Windows guards those folders against programs it does
+not recognize, and OneDrive or iCloud may copy them to the internet as they
+change, so the tools Claude uses fail there in ways that look like mistakes.
+<ul>
+<li><strong>On Windows:</strong> open <strong>File Explorer</strong>, the yellow folder icon in the bar
+along the bottom of the screen. Click the bar at the top of its window that
+shows where you are, type <code>%USERPROFILE%</code>, and press Enter: this is your
+own folder. Right-click an empty spot in the window and choose <strong>New</strong>,
+then <strong>Folder</strong>. A folder appears with its name ready to change: type <code>dev</code>
+and press Enter. Double-click <code>dev</code> to open it, and make your project&#39;s
+folder inside it the same way.</li>
+<li><strong>On a Mac:</strong> open <strong>Finder</strong>. From the menu bar at the very top of the
+screen, choose <strong>Go</strong>, then <strong>Home</strong>: this is your own folder. Choose
+<strong>File</strong>, then <strong>New Folder</strong>. A folder appears with its name ready to
+change: type <code>dev</code> and press Return. Double-click <code>dev</code> to open it, and
+make your project&#39;s folder inside it the same way.</li>
+</ul></li>
+<li>In Visual Studio Code, open the <strong>File</strong> menu at the top and choose <strong>Open
+Folder</strong>. A window for choosing a folder opens: find your new folder, click
+it once, and press the button that confirms the choice.</li>
+<li>Visual Studio Code needs to know that you trust the files in this folder: you
+are their author. It may ask you in a window: choose the button that says
+yes, you trust them. Or it may open the folder in <strong>Restricted Mode</strong>, with a
+band across the top of the window saying so, and the Claude icon gone from
+the left: click <strong>Manage</strong> on that band, then <strong>Trust</strong>.</li>
+</ol>
+<p>You know this step worked when your folder&#39;s name appears at the top of the left
+side of Visual Studio Code, with nothing listed under it, and the Claude icon is
+in the column on the left.</p>
+<h2 id="before-the-last-step-what-claude-will-do">Before the last step: what Claude will do</h2>
+<p>When you send the message in step 6, Claude sets up your project on your
+computer and on GitHub. Two words first, because Claude may use them:</p>
+<ul>
+<li>A <strong>command</strong> is an instruction to the computer typed as words instead of
+clicked.</li>
+<li>A <strong>terminal</strong>, also called the <strong>command line</strong>, is a window where commands
+are typed and the computer answers in text. Claude types the commands for you;
+you see them, and their answers, in its panel.</li>
+</ul>
+<p>Then Claude will:</p>
+<ul>
+<li><strong>Show you each command and its answer</strong> in its panel as it works. Its usual
+setting, which its panel calls <strong>auto mode</strong>, runs the safe ones straight away
+and stops to ask your permission for anything riskier, with buttons to allow
+it or not. It may still ask often in the first hour; that is normal. Read what
+each one says. When it makes sense, allow it. When it does not, or you are
+unsure, ask it to explain first: that is always a fair answer, and it costs
+nothing. Always ask before allowing anything that deletes something, asks for
+a password, or has to do with money.</li>
+<li><strong>Install three free tools</strong> that your project needs, if your computer does
+not have them yet: <strong>Git</strong>, which keeps every version of every file, so
+nothing is ever lost; <strong>GitHub&#39;s command line tool</strong>, which lets Claude talk
+to GitHub for you; and <strong>Node.js</strong>, which runs the project&#39;s own checks.
+<ul>
+<li>On Windows, Claude downloads and installs them, and you move no files. No
+setup window opens, but Windows may dim the screen once and ask <strong>&quot;Do you
+want to allow this app to make changes to your device?&quot;</strong> for <strong>Git for
+Windows</strong>, marked as a verified publisher. That one is expected: press
+<strong>Yes</strong>.</li>
+<li>On a Mac, a window may appear offering to install Apple&#39;s command line
+developer tools: press <strong>Install</strong>, and agree to the license. Then comes the
+one place where you type a command yourself, because only you know your
+Mac&#39;s password: installing Homebrew, a free installer for developer tools,
+in <strong>Terminal</strong>, the Mac&#39;s own window for typing commands. Claude tells you
+when, and which line to paste. To open Terminal, press Command and Space
+together, type <strong>Terminal</strong>, and press Return: a plain window opens, with a
+line of text and a blinking cursor. Paste the line (Command and V) and press
+Return. When it asks for a password, type the one you use to log in to your
+Mac: <strong>nothing appears while you type it, not even dots, and that is
+normal</strong>. Press Return. It may ask you to press Return once more to go on.
+At the end it shows <strong>Next steps</strong> with two more lines: paste those too, one
+at a time, or copy what the window shows and give it to Claude.</li>
+<li>Also on a Mac, Claude may ask you once whether you will note each setup
+screen that looks different from this page, to help its makers. If you
+agree, you read exactly what will be sent before it goes, and you can say
+no.</li>
+</ul></li>
+<li><strong>Sign you in to GitHub.</strong> Claude shows you a short code, such as <code>ABCD-1234</code>,
+and the address <code>github.com/login/device</code>. Open that address in your browser,
+sign in to GitHub if it asks, type the code, and press the green button to
+allow it. Only you can do this part.</li>
+<li><strong>Make your repository.</strong> A repository is your project as GitHub keeps it:
+every file, with every version. Claude makes yours private, so only you and
+anyone you invite can see it, names it after your folder, copies the project
+starter into it, and then copies it straight into your folder. Your folder
+then fills with files on the left of Visual Studio Code, and nothing has to be
+moved.</li>
+<li><strong>Ask you to close Visual Studio Code and open it again</strong>, once your folder
+has filled. A program that was already open does not see the tools installed
+after it, and your project&#39;s safety checks need them, so a new conversation in
+the same window is not enough. Close Visual Studio Code completely (on
+Windows, <strong>File</strong> then <strong>Exit</strong>; on a Mac, <strong>Code</strong> then <strong>Quit Visual Studio
+Code</strong>), open it again, and it opens your folder.</li>
+<li><strong>Ask you to start a new conversation</strong> in that reopened window. Your project
+carries its own instructions and safety checks, and Claude only reads them in
+a conversation that starts inside the project. Claude shows you how to start
+one in its panel; in it, type <strong>continue with the plan</strong> and press Enter.</li>
+</ul>
+<h3 id="what-happens-next">What happens next</h3>
+<p>Setting up is in English. In that new conversation, Claude&#39;s first question is
+<strong>which language you want to work in</strong>, and from then on it speaks yours. Then
+it gets to know you, and then your idea, one question at a time. It explains its
+reasons and suggests an answer, but the decisions are yours, and you can always
+answer in your own words instead of picking a choice.</p>
+<p>When it knows enough, it writes the plan and shows it to you as a page you can
+read anywhere. <strong>Nothing gets built until you say the plan is right.</strong></p>
+<p>After that, you can follow along at any time:</p>
+<ul>
+<li><strong>Your progress page</strong> shows how far along the project is and how many hours
+it has taken. Ask Claude to &quot;open my progress page&quot;.</li>
+<li><strong>Your questions list</strong> holds anything Claude needs from you. Ask &quot;what do you
+need from me?&quot;</li>
+<li><strong>To keep going</strong>, start a new conversation and say &quot;continue with the plan&quot;.</li>
+</ul>
+<h2 id="step-6-say-hello-to-claude">Step 6: say hello to Claude</h2>
+<p>Open the Claude panel by clicking the Claude icon from step 3. Copy the message
+below exactly as it is: point at the gray box and press the copy button at its
+top right if one appears, or select all of its text and copy it. Paste it into
+the box at the bottom of the Claude panel and press Enter. Claude&#39;s answer
+appears above the box, and it begins by checking which tools your computer
+already has.</p>
+<pre tabindex="0"><code>I am not technical, so explain each step in plain words before you do it:
+install Git, GitHub&#39;s command line tool (gh), and Node.js for my user only,
+wherever that is possible, if any of them is missing; sign me in to GitHub
+through the browser with a one-time code that you show me; make my own private
+repository from the project starter, named exactly like this open folder, with
+&quot;gh repo create&quot; and &quot;--template noelito-projects/project-starter --private&quot;;
+clone it into this open folder itself with &quot;gh repo clone&quot;, giving &quot;.&quot; as the
+folder, so that nothing has to be moved (if the folder is not empty, fetch the
+repository into it without moving or deleting what is already here); then tell
+me to close Visual Studio Code completely and open it again, so that it sees the
+new tools, and then to start a new conversation in this folder and type
+&quot;continue with the plan&quot; there, so that the project&#39;s own instructions and
+safety checks are on from its first question.</code></pre>
+<h2 id="if-something-goes-wrong">If something goes wrong</h2>
+<ul>
+<li><strong>Claude asks you to wait</strong> because you have used your plan&#39;s share for now:
+that is normal. Come back when it says, and say &quot;continue with the plan&quot;.</li>
+<li><strong>A step fails</strong>, or a message makes no sense: copy the message to Claude and
+ask &quot;what does this mean, and what should we do?&quot;</li>
+<li><strong>A screen looks different from what this page describes</strong>: tell Claude what
+you see, in your own words, and ask what to do. Even better, show it: on
+Windows press Windows + Shift + S, drag over the screen, and paste it into the
+chat with Ctrl + V; on a Mac press Command + Shift + 4 and drag the picture
+from your Desktop into the chat.</li>
+<li><strong>A sign-in code from your phone or password manager is refused</strong>, on more
+than one site: your computer&#39;s clock is probably wrong. On Windows, open
+<strong>Settings</strong>, then <strong>Time and language</strong>, then <strong>Date and time</strong>, turn on
+<strong>Set time automatically</strong>, and press <strong>Sync now</strong>. On a Mac, open <strong>System
+Settings</strong>, then <strong>General</strong>, then <strong>Date and Time</strong>, and turn on <strong>Set time
+and date automatically</strong>. Then try a new code.</li>
+<li><strong>You are not sure about something it wants to do</strong>: say &quot;stop, and explain
+that first&quot;. It will.</li>
+</ul>
+</main>
+</body>
+</html>

@@ -1,0 +1,257 @@
+/*
+ * The stylesheet of the setup guide's published page. starter-kit/tools/guide-page.mjs
+ * copies it beside the page as guide.css; the page links it, and carries no
+ * style of its own.
+ *
+ * Every color, length, and face is a token on the bare :root below, the one
+ * home for this page's values, and every rule after the tokens uses them. The
+ * colors are redefined twice for dark: once for a reader whose system asks for
+ * dark and who has not chosen light, and once for a reader who chose dark.
+ * The accent is the starter's own window color (project.json, `windowColor`);
+ * its dark counterpart keeps more than 4.5 to 1 against the dark background,
+ * which the tool's test measures.
+ */
+
+:root {
+  --color-background: #f6f8f5;
+  --color-surface: #e9eee7;
+  --color-text: #1a221c;
+  --color-muted: #4b5a4e;
+  --color-border: #c9d3c9;
+  --color-accent: #234f2c;
+  --color-accent-hover: #163a1d;
+  color-scheme: light;
+
+  --face-body:
+    'Public Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial,
+    sans-serif;
+  --face-heading: 'Source Serif 4', Georgia, Cambria, 'Times New Roman', serif;
+  --face-code:
+    ui-monospace, 'Cascadia Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+
+  --size-body: 1.0625rem;
+  --size-small: 0.9375rem;
+  --size-code: 0.9em;
+  --size-title: clamp(2rem, 1.4rem + 3vw, 2.75rem);
+  --size-section: clamp(1.4rem, 1.15rem + 1.2vw, 1.75rem);
+  --size-subsection: 1.25rem;
+  --leading-body: 1.6;
+  --leading-heading: 1.2;
+  --weight-heading: 600;
+  --weight-strong: 600;
+
+  --measure: 65ch;
+  --gutter: 1.25rem;
+  --space-small: 0.5rem;
+  --space-medium: 1rem;
+  --space-large: 2.5rem;
+  --space-page: 3rem;
+  --list-indent: 1.5rem;
+  --rule-width: 1px;
+  --accent-bar-width: 0.25rem;
+  --underline-offset: 0.18em;
+  --underline-width: 1px;
+  --underline-width-hover: 2px;
+  --focus-width: 3px;
+  --focus-offset: 2px;
+  --key-depth: 2px;
+  --radius: 0.375rem;
+  --code-padding-block: 0.1em;
+  --code-padding-inline: 0.3em;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --color-background: #111813;
+    --color-surface: #1c251e;
+    --color-text: #e2e9e3;
+    --color-muted: #a3b2a6;
+    --color-border: #344136;
+    --color-accent: #8cc79a;
+    --color-accent-hover: #b0dcb9;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --color-background: #111813;
+  --color-surface: #1c251e;
+  --color-text: #e2e9e3;
+  --color-muted: #a3b2a6;
+  --color-border: #344136;
+  --color-accent: #8cc79a;
+  --color-accent-hover: #b0dcb9;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--face-body);
+  font-size: var(--size-body);
+  line-height: var(--leading-body);
+  overflow-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* The one wrapper: the side gutter is set here and nowhere else, so the page
+ * keeps its margin at phone width; the vertical space is padding-block, which
+ * leaves the sides alone. */
+.guide {
+  box-sizing: border-box;
+  max-width: calc(var(--measure) + 2 * var(--gutter));
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  padding-block: var(--space-page);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--face-heading);
+  font-weight: var(--weight-heading);
+  line-height: var(--leading-heading);
+  text-wrap: balance;
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: var(--size-title);
+  margin-block: 0 var(--space-medium);
+  padding-block-end: var(--space-medium);
+  border-block-end: var(--accent-bar-width) solid var(--color-accent);
+}
+
+h2 {
+  font-size: var(--size-section);
+  margin-block: var(--space-large) var(--space-small);
+  padding-block-start: var(--space-medium);
+  border-block-start: var(--rule-width) solid var(--color-border);
+}
+
+h3 {
+  font-size: var(--size-subsection);
+  margin-block: var(--space-large) var(--space-small);
+}
+
+p,
+ul,
+ol,
+pre,
+blockquote {
+  margin-block: 0 var(--space-medium);
+}
+
+ul,
+ol {
+  padding-inline-start: var(--list-indent);
+}
+
+li {
+  margin-block: var(--space-small);
+}
+
+li > ul,
+li > ol {
+  margin-block: var(--space-small) 0;
+}
+
+li::marker {
+  color: var(--color-muted);
+}
+
+ol > li::marker {
+  font-weight: var(--weight-strong);
+  color: var(--color-accent);
+}
+
+strong {
+  font-weight: var(--weight-strong);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration-line: underline;
+  text-decoration-thickness: var(--underline-width);
+  text-underline-offset: var(--underline-offset);
+  overflow-wrap: anywhere;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+  text-decoration-thickness: var(--underline-width-hover);
+}
+
+a:focus-visible {
+  outline: var(--focus-width) solid var(--color-accent);
+  outline-offset: var(--focus-offset);
+  border-radius: var(--radius);
+}
+
+code {
+  font-family: var(--face-code);
+  font-size: var(--size-code);
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding-block: var(--code-padding-block);
+  padding-inline: var(--code-padding-inline);
+  overflow-wrap: anywhere;
+}
+
+kbd {
+  font-family: var(--face-code);
+  font-size: var(--size-code);
+  border: var(--rule-width) solid var(--color-border);
+  border-block-end-width: var(--key-depth);
+  border-radius: var(--radius);
+  padding-block: var(--code-padding-block);
+  padding-inline: var(--code-padding-inline);
+  white-space: nowrap;
+}
+
+/* A block of code keeps its lines as written and scrolls inside its own box,
+ * so a long line never pushes the page wider than the phone. */
+pre {
+  overflow-x: auto;
+  background: var(--color-surface);
+  border-inline-start: var(--accent-bar-width) solid var(--color-accent);
+  border-radius: var(--radius);
+  padding-block: var(--space-medium);
+  padding-inline: var(--space-medium);
+  font-size: var(--size-small);
+  line-height: var(--leading-body);
+}
+
+pre:focus-visible {
+  outline: var(--focus-width) solid var(--color-accent);
+  outline-offset: var(--focus-offset);
+}
+
+pre code {
+  background: none;
+  padding-block: 0;
+  padding-inline: 0;
+  font-size: inherit;
+  overflow-wrap: normal;
+  white-space: pre;
+}
+
+blockquote {
+  margin-inline: 0;
+  padding-inline-start: var(--space-medium);
+  border-inline-start: var(--accent-bar-width) solid var(--color-border);
+  color: var(--color-muted);
+}
+
+hr {
+  border: none;
+  border-block-start: var(--rule-width) solid var(--color-border);
+  margin-block: var(--space-large);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
