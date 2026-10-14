@@ -87,31 +87,33 @@ to &quot;VS Code&quot;) is a free program from Microsoft. Think of it as the wor
 shows the files of your project on the left and a conversation with Claude on
 the right.</p>
 <ol>
-<li>In your web browser (the program you use to visit websites), go to
+<li><p>In your web browser (the program you use to visit websites), go to
 <a href="https://code.visualstudio.com">code.visualstudio.com</a> and press the big
 download button. The site picks the right version for your computer. The
 browser shows the file as it downloads, usually near the top right or the
-bottom of its window, and puts it in your <strong>Downloads</strong> folder.</li>
-<li><strong>On Windows:</strong> open the downloaded file. Its name begins with
-<code>VSCodeUserSetup</code>.
+bottom of its window, and puts it in your <strong>Downloads</strong> folder.</p></li>
+<li><p><strong>On Windows:</strong> open the downloaded file. Its name begins with
+<code>VSCodeUserSetup</code>.</p>
 <ul>
-<li>A setup window for Visual Studio Code opens. It leads you through a few
-pages, each with a <strong>Next</strong> button at the bottom.</li>
-<li>The first page is the license agreement, the terms for using the program.
+<li><p>A setup window for Visual Studio Code opens. It leads you through a few
+pages, each with a <strong>Next</strong> button at the bottom.</p></li>
+<li><p>The first page is the license agreement, the terms for using the program.
 <strong>I do not accept the agreement</strong> is chosen at first: choose <strong>I accept the
 agreement</strong>, then press <strong>Next</strong>. On every page after that, keep the
-choices already made.</li>
-<li>One page has a box labeled <strong>Add to PATH (requires shell restart)</strong>. Leave
+choices already made.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/installer-license.png" alt="The setup window&#39;s License Agreement page, with &quot;I do not accept the agreement&quot; chosen and the choice &quot;I accept the agreement&quot; marked above it"></p></li>
+<li><p>One page has a box labeled <strong>Add to PATH (requires shell restart)</strong>. Leave
 it ticked. PATH is the list of places where Windows looks for programs, and
-this lets Claude find Visual Studio Code later.</li>
-<li>Press <strong>Install</strong>, and wait for the bar to fill. The last page has a box
-ticked to launch Visual Studio Code: leave it, and press <strong>Finish</strong>.</li>
-<li>It never asks for an administrator password (the password some computers
+this lets Claude find Visual Studio Code later.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/installer-add-to-path.png" alt="The setup window&#39;s Select Additional Tasks page, with the ticked box &quot;Add to PATH (requires shell restart)&quot; marked"></p></li>
+<li><p>Press <strong>Install</strong>, and wait for the bar to fill. The last page has a box
+ticked to launch Visual Studio Code: leave it, and press <strong>Finish</strong>.</p></li>
+<li><p>It never asks for an administrator password (the password some computers
 ask for before a change that affects everyone who uses them), and that is
-on purpose: this version installs for you alone.</li>
+on purpose: this version installs for you alone.</p></li>
 </ul></li>
-<li><strong>On a Mac:</strong> open <strong>Finder</strong>, the Mac&#39;s window for browsing files: the
-smiling blue face in the row of icons along the bottom of the screen.
+<li><p><strong>On a Mac:</strong> open <strong>Finder</strong>, the Mac&#39;s window for browsing files: the
+smiling blue face in the row of icons along the bottom of the screen.</p>
 <ul>
 <li>Click <strong>Downloads</strong> in the left column of the Finder window. The download
 is there as <strong>Visual Studio Code</strong>. If you see a file ending in <code>.zip</code>
@@ -121,41 +123,44 @@ instead, double-click it, and the program appears beside it.</li>
 asks whether you are sure you want to open a program downloaded from the
 internet. Choose <strong>Open</strong>.</li>
 </ul></li>
-<li>Open Visual Studio Code if it is not open already. On Windows, press the
+<li><p>Open Visual Studio Code if it is not open already. On Windows, press the
 Start button and type <strong>Visual Studio Code</strong>; on a Mac, it is in
-<strong>Applications</strong>.</li>
-<li>The first time, a window titled <strong>Welcome to VS Code</strong> offers to sign you in
+<strong>Applications</strong>.</p></li>
+<li><p>The first time, a window titled <strong>Welcome to VS Code</strong> offers to sign you in
 to GitHub Copilot, Microsoft&#39;s own assistant. You do not need it: Claude is
 your assistant here. Choose <strong>Continue without Signing In</strong> at its bottom
-right, then <strong>Get Started</strong> on the page about colors.</li>
-<li>Visual Studio Code is now a window, usually dark, with a column of small
+right, then <strong>Get Started</strong> on the page about colors.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/welcome-without-copilot.png" alt="The Welcome to VS Code window offering to sign in to GitHub Copilot, with &quot;Continue without Signing In&quot; marked at its bottom right"></p></li>
+<li><p>Visual Studio Code is now a window, usually dark, with a column of small
 icons down its left edge and a <strong>Welcome</strong> page in the middle. You can close
 the welcome page with the <strong>×</strong> on its tab. A panel on the right titled
 <strong>Chat</strong> belongs to GitHub Copilot, not to Claude: do not type in it. You can
-close it with the <strong>×</strong> at its top right.</li>
+close it with the <strong>×</strong> at its top right.</p></li>
 </ol>
 <h2 id="step-3-add-claude-to-visual-studio-code">Step 3: add Claude to Visual Studio Code</h2>
 <p>An extension is an add-on that gives Visual Studio Code a new ability. Claude
 Code is one.</p>
 <ol>
-<li>On the far left of Visual Studio Code there is a column of icons. Click the
+<li><p>On the far left of Visual Studio Code there is a column of icons. Click the
 one that looks like <strong>four small squares, with one of them set apart</strong>. A
 panel titled <strong>Extensions</strong> opens beside the column, with a search box at its
-top.</li>
-<li>In that search box, type <strong>Claude Code</strong>. A list of results appears under it.
-Several have Claude in their names, and most are made by other people.</li>
-<li>Choose <strong>Claude Code for VS Code</strong>, whose publisher, written under its name,
+top.</p></li>
+<li><p>In that search box, type <strong>Claude Code</strong>. A list of results appears under it.
+Several have Claude in their names, and most are made by other people.</p></li>
+<li><p>Choose <strong>Claude Code for VS Code</strong>, whose publisher, written under its name,
 is <strong>Anthropic</strong> with a small blue tick, and press its <strong>Install</strong> button.
 Visual Studio Code asks whether you trust the publisher Anthropic: press
 <strong>Trust Publisher &amp; Install</strong>. After a few seconds a page titled <strong>Get
-started with Claude Code</strong> opens.</li>
-<li>A Claude icon, a star with many points, appears in the column on the left.
+started with Claude Code</strong> opens.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/extensions-claude-code.png" alt="The Extensions panel searched for Claude Code: several extensions with Claude in their names, and the first one, Claude Code for VS Code by Anthropic with a blue tick, marked"></p></li>
+<li><p>A Claude icon, a star with many points, appears in the column on the left.
 Click it, and a Claude panel opens and asks how you want to log in. Choose
 <strong>Claude.ai Subscription</strong>, your Claude account from step 1. Visual Studio
 Code asks whether to open the external website: press <strong>Open</strong>. Your browser
 opens claude.ai, asks you to log in if you are not already, and then asks
 whether to allow Visual Studio Code to use your account; allow it, then come
-back to Visual Studio Code.</li>
+back to Visual Studio Code.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/claude-panel-log-in.png" alt="The Claude panel asking &quot;How do you want to log in?&quot;, with the orange &quot;Claude.ai Subscription&quot; button marked above Anthropic Console and Bedrock, Foundry, or Vertex"></p></li>
 </ol>
 <p>You know this step worked when the Claude panel shows a box at its bottom where
 you can type a message. Do not type anything yet.</p>
@@ -184,7 +189,7 @@ you to the project starter; accept it if it arrives.</li>
 picture for your account at the top right.</p>
 <h2 id="step-5-make-a-folder-for-your-project">Step 5: make a folder for your project</h2>
 <ol>
-<li>Make a folder named <code>dev</code> in your own folder, the one named after you, and
+<li><p>Make a folder named <code>dev</code> in your own folder, the one named after you, and
 inside it a new, empty folder for your project, using small letters and
 dashes instead of spaces. Any short name will do, even before your idea has a
 name, and it can be changed later; your project on GitHub takes the same
@@ -192,29 +197,32 @@ name. For example: <code>C:\Users\&lt;your name&gt;\dev\family-recipes</code> on
 <code>family-recipes</code> in <code>dev</code> in your home folder on a Mac. Not in <strong>Documents</strong>
 or on the <strong>Desktop</strong>: Windows guards those folders against programs it does
 not recognize, and OneDrive or iCloud may copy them to the internet as they
-change, so the tools Claude uses fail there in ways that look like mistakes.
+change, so the tools Claude uses fail there in ways that look like mistakes.</p>
 <ul>
-<li><strong>On Windows:</strong> open <strong>File Explorer</strong>, the yellow folder icon in the bar
+<li><p><strong>On Windows:</strong> open <strong>File Explorer</strong>, the yellow folder icon in the bar
 along the bottom of the screen. Click the bar at the top of its window that
 shows where you are, type <code>%USERPROFILE%</code>, and press Enter: this is your
 own folder. Right-click an empty spot in the window and choose <strong>New</strong>,
 then <strong>Folder</strong>. A folder appears with its name ready to change: type <code>dev</code>
 and press Enter. Double-click <code>dev</code> to open it, and make your project&#39;s
-folder inside it the same way.</li>
-<li><strong>On a Mac:</strong> open <strong>Finder</strong>. From the menu bar at the very top of the
+folder inside it the same way.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/new-folder-menu.png" alt="File Explorer&#39;s right-click menu with New opened beside it, and Folder marked at the top of that list"></p></li>
+<li><p><strong>On a Mac:</strong> open <strong>Finder</strong>. From the menu bar at the very top of the
 screen, choose <strong>Go</strong>, then <strong>Home</strong>: this is your own folder. Choose
 <strong>File</strong>, then <strong>New Folder</strong>. A folder appears with its name ready to
 change: type <code>dev</code> and press Return. Double-click <code>dev</code> to open it, and
-make your project&#39;s folder inside it the same way.</li>
+make your project&#39;s folder inside it the same way.</p></li>
 </ul></li>
-<li>In Visual Studio Code, open the <strong>File</strong> menu at the top and choose <strong>Open
+<li><p>In Visual Studio Code, open the <strong>File</strong> menu at the top and choose <strong>Open
 Folder</strong>. A window for choosing a folder opens: find your new folder, click
-it once, and press the button that confirms the choice.</li>
-<li>Visual Studio Code needs to know that you trust the files in this folder: you
+it once, and press the button that confirms the choice.</p></li>
+<li><p>Visual Studio Code needs to know that you trust the files in this folder: you
 are their author. It may ask you in a window: choose the button that says
 yes, you trust them. Or it may open the folder in <strong>Restricted Mode</strong>, with a
 band across the top of the window saying so, and the Claude icon gone from
-the left: click <strong>Manage</strong> on that band, then <strong>Trust</strong>.</li>
+the left: click <strong>Manage</strong> on that band, then <strong>Trust</strong>.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/restricted-mode-band.png" alt="The band across the top of Visual Studio Code: &quot;Restricted Mode is intended for safe code browsing. Trust this folder to enable all features.&quot;, with Manage marked"></p>
+<p><img src="starter-kit/docs/setup-guide-pictures/restricted-mode-trust.png" alt="The page Manage opens, titled &quot;You are in Restricted Mode&quot;, with the Trust button marked under &quot;In a Trusted Folder&quot;"></p></li>
 </ol>
 <p>You know this step worked when your folder&#39;s name appears at the top of the left
 side of Visual Studio Code, with nothing listed under it, and the Claude icon is
@@ -244,12 +252,13 @@ not have them yet: <strong>Git</strong>, which keeps every version of every file
 nothing is ever lost; <strong>GitHub&#39;s command line tool</strong>, which lets Claude talk
 to GitHub for you; and <strong>Node.js</strong>, which runs the project&#39;s own checks.
 <ul>
-<li>On Windows, Claude downloads and installs them, and you move no files. No
+<li><p>On Windows, Claude downloads and installs them, and you move no files. No
 setup window opens, but Windows may dim the screen once and ask <strong>&quot;Do you
 want to allow this app to make changes to your device?&quot;</strong> for <strong>Git for
 Windows</strong>, marked as a verified publisher. That one is expected: press
-<strong>Yes</strong>.</li>
-<li>On a Mac, a window may appear offering to install Apple&#39;s command line
+<strong>Yes</strong>.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/allow-git-for-windows.png" alt="Windows asking &quot;Do you want to allow this app to make changes to your device?&quot; for Git for Windows, verified publisher, with Yes marked"></p></li>
+<li><p>On a Mac, a window may appear offering to install Apple&#39;s command line
 developer tools: press <strong>Install</strong>, and agree to the license. Then comes the
 one place where you type a command yourself, because only you know your
 Mac&#39;s password: installing Homebrew, a free installer for developer tools,
@@ -261,11 +270,11 @@ Return. When it asks for a password, type the one you use to log in to your
 Mac: <strong>nothing appears while you type it, not even dots, and that is
 normal</strong>. Press Return. It may ask you to press Return once more to go on.
 At the end it shows <strong>Next steps</strong> with two more lines: paste those too, one
-at a time, or copy what the window shows and give it to Claude.</li>
-<li>Also on a Mac, Claude may ask you once whether you will note each setup
+at a time, or copy what the window shows and give it to Claude.</p></li>
+<li><p>Also on a Mac, Claude may ask you once whether you will note each setup
 screen that looks different from this page, to help its makers. If you
 agree, you read exactly what will be sent before it goes, and you can say
-no.</li>
+no.</p></li>
 </ul></li>
 <li><strong>Sign you in to GitHub.</strong> Claude shows you a short code, such as <code>ABCD-1234</code>,
 and the address <code>github.com/login/device</code>. Open that address in your browser,
