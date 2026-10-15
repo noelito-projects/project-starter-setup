@@ -167,9 +167,30 @@ opens claude.ai, asks you to log in if you are not already, and then asks
 whether to allow Visual Studio Code to use your account; allow it, then come
 back to Visual Studio Code.</p>
 <p><img src="starter-kit/docs/setup-guide-pictures/claude-panel-log-in.png" alt="The Claude panel asking &quot;How do you want to log in?&quot;, with the orange &quot;Claude.ai Subscription&quot; button marked above Anthropic Console and Bedrock, Foundry, or Vertex"></p></li>
+<li><p>Choose which version of Claude does the work, and how hard it thinks. Under
+the box at the bottom of the Claude panel is a small button naming a version
+and an effort, such as <strong>Opus 5.5 High</strong>. If it already begins with <strong>Opus</strong>
+and ends with <strong>High</strong>, leave it. Otherwise press it, and a list titled
+<strong>Select a model</strong> opens:</p>
+<ul>
+<li>Choose the entry whose name begins with <strong>Opus</strong>. The number after it
+changes as newer versions come out; if there are several, take the one
+nearest the top.</li>
+<li>Under the list, beside <strong>Effort</strong>, are five dots, from the lightest
+thinking on the left to the hardest on the right. Press the middle one, so
+that it reads <strong>Effort (High)</strong>.</li>
+</ul>
+<p>Opus thinking hard writes the best plan, and the plan is what everything
+after it rests on. It uses your plan&#39;s allowance faster than the lighter
+versions, but the starter hands routine work to lighter ones by itself, so
+you never need to switch down. <strong>Fable</strong>, also in the list, is stronger
+still, and uses the allowance faster again; it is not needed. If no Opus is
+in the list, choose the entry marked <strong>(recommended)</strong>.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/claude-panel-model-and-effort.png" alt="The Claude panel&#39;s &quot;Select a model&quot; list, with Opus checked among Default, Sonnet, Fable, and Haiku, the Effort row reading High with its middle dot chosen, and the button under the message box reading &quot;Opus 5.5 High&quot;"></p></li>
 </ol>
 <p>You know this step worked when the Claude panel shows a box at its bottom where
-you can type a message. Do not type anything yet.</p>
+you can type a message, and the button under it begins with <strong>Opus</strong> and ends
+with <strong>High</strong>. Do not type anything yet.</p>
 <h2 id="step-4-make-a-github-account">Step 4: make a GitHub account</h2>
 <p>GitHub is a website that keeps a copy of your project safe online, with every
 version of it, so nothing you make can be lost if your computer is. It is free.</p>
