@@ -38,13 +38,21 @@ your screen, and ask what to do.</p>
 <p><strong>Already have a project?</strong> If you have an app, a website, or a game of your own
 already, with its files in a folder on your computer and kept on GitHub, the
 starter can be added to it rather than starting a new one: your files and their
-history stay as they are. Do steps 1 to 4 below as they are written, then follow
+history stay as they are. You can take the whole starter, or only the parts you
+choose from
+<a href="https://noelito-projects.github.io/project-starter-setup/features.html">the menu of what it offers</a>,
+which says what each part is for and what it gives you. Do steps 1 to 4 below as
+they are written, then follow
 <a href="#a-project-you-already-have">a project you already have</a> instead of steps 5
-and 6.</p>
+and 6. If you only want to send what your project has learned back to the
+starter, without adding anything to it, follow
+<a href="#sending-lessons-from-a-project">sending lessons from a project</a> instead.</p>
 <h2 id="what-you-need-before-you-begin">What you need before you begin</h2>
 <ul>
-<li><strong>A computer</strong> running Windows 10 or 11, or a Mac. A phone or a tablet is not
-enough to build on, though you can follow along on one later.</li>
+<li><strong>A computer</strong> running Windows 10 or 11, a Mac, or Linux. On Linux, this page
+was tried on Ubuntu 26.04, Fedora 44, and Debian 13, each with the desktop it
+comes with, and it says where they differ. A phone or a tablet is not enough
+to build on, though you can follow along on one later.</li>
 <li><strong>An email address</strong> you can open, to confirm new accounts.</li>
 <li><strong>To be old enough</strong>: 18 or older for a Claude account (Anthropic&#39;s consumer
 terms, read on 2026-10-13), and 13 or older for a GitHub account (GitHub&#39;s
@@ -93,11 +101,12 @@ to &quot;VS Code&quot;) is a free program from Microsoft. Think of it as the wor
 shows the files of your project on the left and a conversation with Claude on
 the right.</p>
 <ol>
-<li><p>In your web browser (the program you use to visit websites), go to
-<a href="https://code.visualstudio.com">code.visualstudio.com</a> and press the big
-download button. The site picks the right version for your computer. The
-browser shows the file as it downloads, usually near the top right or the
-bottom of its window, and puts it in your <strong>Downloads</strong> folder.</p></li>
+<li><p><strong>On Windows or a Mac</strong>, in your web browser (the program you use to visit
+websites), go to <a href="https://code.visualstudio.com">code.visualstudio.com</a> and
+press the big download button. The site picks the right version for your
+computer. The browser shows the file as it downloads, usually near the top
+right or the bottom of its window, and puts it in your <strong>Downloads</strong> folder.
+On Linux, item 4 below takes the place of this one.</p></li>
 <li><p><strong>On Windows:</strong> open the downloaded file. Its name begins with
 <code>VSCodeUserSetup</code>.</p>
 <ul>
@@ -129,9 +138,61 @@ instead, double-click it, and the program appears beside it.</li>
 asks whether you are sure you want to open a program downloaded from the
 internet. Choose <strong>Open</strong>.</li>
 </ul></li>
+<li><p><strong>On Linux:</strong> Visual Studio Code comes through the window your computer adds
+programs with, which asks once for the password you use to sign in to the
+computer. That is expected: a program added this way is for everyone who uses
+the computer, so the computer checks that you are allowed. Where this page
+says to press the <strong>Super key</strong>, it means the key with the Windows logo on
+most keyboards, at the bottom left.</p>
+<ul>
+<li><p><strong>First, close the welcome window</strong> if one fills the screen or stands in
+its middle the first time you sign in. On Ubuntu, it is titled <strong>Welcome to
+Ubuntu</strong>: press <strong>Next</strong> at its top right on each page (or <strong>Skip</strong>, where
+that is the button), and <strong>Finish</strong> on the last. On Fedora and Debian, it
+is titled <strong>Welcome to Fedora Linux</strong> or <strong>Welcome to Debian</strong>: press
+<strong>Skip</strong>. There, until it is gone, the Super key does nothing, and what you
+type next may go somewhere you did not mean.</p></li>
+<li><p><strong>On Ubuntu:</strong> click <strong>App Center</strong>, the orange shopping bag in the column
+of icons along the left edge of the screen. Click the search box at the top
+of its window and type <strong>Visual Studio Code</strong>. A list opens under the box:
+under <strong>Snap packages</strong>, choose <strong>code</strong>, with the blue icon. Its page
+names its publisher, <strong>Visual Studio Code</strong>, with a green tick. Press
+<strong>Install</strong>.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/app-center-code.png" alt="App Center&#39;s page for &quot;code&quot;, published by Visual Studio Code with a green tick, with the Install button marked"></p>
+<p>A window titled <strong>Authentication Required</strong> asks for your password: type
+the one you use to sign in to this computer, and press Enter. After a
+minute or two the button reads <strong>Open</strong>: press it.</p></li>
+<li><p><strong>On Fedora or Debian:</strong> the window that adds programs, called
+<strong>Software</strong>, does not offer Visual Studio Code, so it comes from
+Microsoft&#39;s website instead. Press the Super key and click <strong>Firefox</strong>, the
+web browser, first in the row of icons along the bottom of the screen. Go
+to <a href="https://code.visualstudio.com">code.visualstudio.com</a> and press
+<strong>Download</strong> at the top right of the page. On the page that opens, in the
+box marked <strong>Linux</strong>, press <strong>Red Hat/Fedora</strong> on Fedora, or
+<strong>Debian/Ubuntu</strong> on Debian.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/download-page-linux.png" alt="The download page&#39;s Linux box, marked &quot;Your OS&quot;, with its two buttons, Debian/Ubuntu and Red Hat/Fedora, marked"></p>
+<p>Firefox shows the download in a small panel at its top right. When the
+panel says <strong>Completed</strong>, click the file&#39;s name, which begins with <code>code</code>.
+<strong>Software</strong> opens on a page titled <strong>code</strong>, marked <strong>Local file</strong>: press
+<strong>Install</strong>. It may say <strong>Potentially Unsafe</strong> and <strong>Provided by a third
+party</strong>, which only means that the program comes from Microsoft rather than
+from Fedora or Debian.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/software-install-local-file.png" alt="Software&#39;s page for &quot;code&quot;, a local file, with the Install button marked, and Potentially Unsafe, provided by a third party, below"></p>
+<p>A window titled <strong>Authentication Required</strong> asks for your password: type
+the one you use to sign in to this computer, and press Enter.</p></li>
+<li><p><strong>Also on Debian:</strong> about a minute later, a window titled <strong>Configuring
+code</strong> asks <strong>Add Microsoft apt repository for Visual Studio Code?</strong>, with
+its box ticked. Leave it ticked, so Visual Studio Code keeps itself up to
+date, and press <strong>Next</strong> at its top right. The install waits until you do.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/configuring-code-repository.png" alt="The Configuring code window asking &quot;Add Microsoft apt repository for Visual Studio Code?&quot;, its box ticked, with Next marked"></p></li>
+<li><p>When it is done, Debian&#39;s page shows <strong>Open</strong>: press it. Fedora&#39;s shows
+only <strong>Uninstall…</strong>: close the window, and open Visual Studio Code as the
+next item says.</p></li>
+</ul></li>
 <li><p>Open Visual Studio Code if it is not open already. On Windows, press the
 Start button and type <strong>Visual Studio Code</strong>; on a Mac, it is in
-<strong>Applications</strong>.</p></li>
+<strong>Applications</strong>; on Linux, press the Super key, type <strong>Visual Studio Code</strong>,
+and press Enter.</p></li>
 <li><p>The first time, a window titled <strong>Welcome to VS Code</strong> offers to sign you in
 to GitHub Copilot, Microsoft&#39;s own assistant. You do not need it: Claude is
 your assistant here. Choose <strong>Continue without Signing In</strong> at its bottom
@@ -145,7 +206,8 @@ close it with the <strong>×</strong> at its top right.</p></li>
 </ol>
 <h2 id="step-3-add-claude-to-visual-studio-code">Step 3: add Claude to Visual Studio Code</h2>
 <p>An extension is an add-on that gives Visual Studio Code a new ability. Claude
-Code is one.</p>
+Code is one. The pictures below were taken on Windows, and on Linux the same
+screens look the same.</p>
 <ol>
 <li><p>On the far left of Visual Studio Code there is a column of icons. Click the
 one that looks like <strong>four small squares, with one of them set apart</strong>. A
@@ -221,10 +283,11 @@ inside it a new, empty folder for your project, using small letters and
 dashes instead of spaces. Any short name will do, even before your idea has a
 name, and it can be changed later; your project on GitHub takes the same
 name. For example: <code>C:\Users\&lt;your name&gt;\dev\family-recipes</code> on Windows, or
-<code>family-recipes</code> in <code>dev</code> in your home folder on a Mac. Not in <strong>Documents</strong>
-or on the <strong>Desktop</strong>: Windows guards those folders against programs it does
-not recognize, and OneDrive or iCloud may copy them to the internet as they
-change, so the tools Claude uses fail there in ways that look like mistakes.</p>
+<code>family-recipes</code> in <code>dev</code> in your home folder on a Mac or on Linux. Not in
+<strong>Documents</strong> or on the <strong>Desktop</strong>: Windows guards those folders against
+programs it does not recognize, and OneDrive or iCloud may copy them to the
+internet as they change, so the tools Claude uses fail there in ways that
+look like mistakes.</p>
 <ul>
 <li><p><strong>On Windows:</strong> open <strong>File Explorer</strong>, the yellow folder icon in the bar
 along the bottom of the screen. Click the bar at the top of its window that
@@ -239,10 +302,19 @@ screen, choose <strong>Go</strong>, then <strong>Home</strong>: this is your own
 <strong>File</strong>, then <strong>New Folder</strong>. A folder appears with its name ready to
 change: type <code>dev</code> and press Return. Double-click <code>dev</code> to open it, and
 make your project&#39;s folder inside it the same way.</p></li>
+<li><p><strong>On Linux:</strong> open <strong>Files</strong>. On Ubuntu, it is the folder icon in the
+column along the left edge of the screen; on Fedora and Debian, press the
+Super key, type <strong>Files</strong>, and press Enter. It opens in your own folder,
+named <strong>Home</strong> at the top of its window. Right-click an empty spot in the
+window and choose <strong>New Folder…</strong>. A small window titled <strong>New Folder</strong>
+asks for a <strong>Folder Name</strong>: type <code>dev</code> and press Enter. Double-click <code>dev</code>
+to open it, and make your project&#39;s folder inside it the same way.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/files-new-folder-menu.png" alt="The menu Files shows on a right-click in an empty spot, with New Folder… marked at its top"></p></li>
 </ul></li>
 <li><p>In Visual Studio Code, open the <strong>File</strong> menu at the top and choose <strong>Open
 Folder</strong>. A window for choosing a folder opens: find your new folder, click
-it once, and press the button that confirms the choice.</p></li>
+it once, and press the button that confirms the choice (on Linux,
+<strong>Select</strong>).</p></li>
 <li><p>Visual Studio Code needs to know that you trust the files in this folder: you
 are their author. It may ask you in a window: choose the button that says
 yes, you trust them. Or it may open the folder in <strong>Restricted Mode</strong>, with a
@@ -298,6 +370,22 @@ Mac: <strong>nothing appears while you type it, not even dots, and that is
 normal</strong>. Press Return. It may ask you to press Return once more to go on.
 At the end it shows <strong>Next steps</strong> with two more lines: paste those too, one
 at a time, or copy what the window shows and give it to Claude.</p></li>
+<li><p>On Linux, Claude installs Node.js and GitHub&#39;s command line tool for you
+alone, with no password. Git comes from the computer&#39;s own installer, which
+asks for your password, so if the computer does not have Git (Ubuntu and
+Debian do not; Fedora does), that line is the one you type yourself, and
+Claude tells you when and which line. Type it where Claude says: in Visual
+Studio Code&#39;s own terminal (its menu <strong>Terminal</strong>, then <strong>New Terminal</strong>; in
+a narrow window, <strong>Terminal</strong> is under the three dots), which opens at the
+bottom of the window, or in the <strong>Terminal</strong> app (press the Super key, type
+<strong>Terminal</strong>, and press Enter). Either shows a line of text and a blinking
+cursor. Type the line exactly as Claude shows it, and press Enter. When it
+asks for a password, type the one you use to sign in to the computer and
+press Enter: on Ubuntu a star appears for each letter, and on Fedora and
+Debian <strong>nothing appears while you type it, and that is normal</strong>. On Fedora,
+the first time, a few lines about using this with care come first. When the
+window shows its line with the blinking cursor again, Git is installed: tell
+Claude.</p></li>
 <li><p>Also on a Mac, Claude may ask you once whether you will note each setup
 screen that looks different from this page, to help its makers. If you
 agree, you read exactly what will be sent before it goes, and you can say
@@ -306,7 +394,8 @@ no.</p></li>
 <li><p><strong>Sign you in to GitHub.</strong> Claude shows you a short code, such as <code>ABCD-1234</code>,
 and the address <code>github.com/login/device</code>. Open that address in your browser,
 sign in to GitHub if it asks, then type the code or paste it, and press
-<strong>Continue</strong> and then <strong>Authorize</strong>. Only you can do this part.</p></li>
+<strong>Continue</strong> and then <strong>Authorize</strong>. Only you can do this part. A code lasts
+about 15 minutes; if it runs out first, Claude makes a new one.</p></li>
 <li><p><strong>Make your repository.</strong> A repository is your project as GitHub keeps it:
 every file, with every version. Claude makes yours private, so only you and
 anyone you invite can see it, names it after your folder, copies the project
@@ -316,9 +405,9 @@ moved.</p></li>
 <li><p><strong>Ask you to close Visual Studio Code and open it again</strong>, once your folder
 has filled. A program that was already open does not see the tools installed
 after it, and your project&#39;s safety checks need them, so a new conversation in
-the same window is not enough. Close Visual Studio Code completely (on
-Windows, <strong>File</strong> then <strong>Exit</strong>; on a Mac, <strong>Code</strong> then <strong>Quit Visual Studio
-Code</strong>), open it again, and it opens your folder.</p>
+the same window is not enough. Close Visual Studio Code completely (on Windows
+and Linux, <strong>File</strong> then <strong>Exit</strong>; on a Mac, <strong>Code</strong> then <strong>Quit Visual
+Studio Code</strong>), open it again, and it opens your folder.</p>
 <p>At the bottom right, Visual Studio Code then asks <strong>&quot;Do you want to install
 the recommended &#39;Explorer Tasks&#39; extension from Yokopoco Mayoko for this
 repository?&quot;</strong> This is an extension your project suggests: it lists the things
@@ -365,17 +454,19 @@ First, if this open folder already holds a project of its own, with a .git
 folder, stop there, change nothing, and tell me to follow the setup guide&#39;s
 part for a project I already have. Otherwise: install Git, GitHub&#39;s command
 line tool (gh), and Node.js for my user only, wherever that is possible, if any
-of them is missing; sign me in to GitHub through the browser with a one-time
-code that you show me; make my own private repository from the project
-starter, named exactly like this open folder, with &quot;gh repo create&quot; and
-&quot;--template noelito-projects/project-starter --private&quot;; clone it into this
-open folder itself with &quot;gh repo clone&quot;, giving &quot;.&quot; as the folder, so that
-nothing has to be moved (if the folder is not empty, fetch the repository into
-it without moving or deleting what is already here); then tell me to close
-Visual Studio Code completely and open it again, so that it sees the new tools,
-and then to start a new conversation in this folder and type &quot;continue with
-the plan&quot; there, so that the project&#39;s own instructions and safety checks are
-on from its first question.</code></pre>
+of them is missing, but Git only through my computer&#39;s own installer, never
+unpacked by hand, so that my computer&#39;s updates keep it safe, even if that
+means I type my password; sign me in to GitHub through the browser with a
+one-time code that you show me; make my own private repository from the
+project starter, named exactly like this open folder, with &quot;gh repo create&quot;
+and &quot;--template noelito-projects/project-starter --private&quot;; clone it into
+this open folder itself with &quot;gh repo clone&quot;, giving &quot;.&quot; as the folder, so
+that nothing has to be moved (if the folder is not empty, fetch the
+repository into it without moving or deleting what is already here); then
+tell me to close Visual Studio Code completely and open it again, so that it
+sees the new tools, and then to start a new conversation in this folder and
+type &quot;continue with the plan&quot; there, so that the project&#39;s own instructions
+and safety checks are on from its first question.</code></pre>
 <h2 id="a-project-you-already-have">A project you already have</h2>
 <p>These take the place of steps 5 and 6 when you are adding the starter to a
 project of your own. Steps 1 to 4 come first, as they are written.</p>
@@ -397,14 +488,38 @@ starter with &quot;gh repo clone noelito-projects/project-starter&quot; into a t
 folder outside this project, never into it, and change nothing in this project
 yet. Read starter-kit/library/skills/adopt-the-starter/SKILL.md in that clone
 and follow it from its beginning: it says what to ask me and what to do, and
-it keeps this project&#39;s own branches untouched until I say yes.</code></pre>
+it keeps this project&#39;s own branches untouched until I say yes. I may want only
+some parts of the starter, so show me its menu of features before bringing
+anything in.</code></pre>
 <p>What happens next: Claude asks you a few questions, one at a time, mostly to
-check that it understood what your project&#39;s own files already say. It then
+check that it understood what your project&#39;s own files already say, and shows
+you the menu so you can take all of the starter or only some parts. It then
 works in a second folder of its own beside your project&#39;s, so your project keeps
 working as it does now while the starter goes in, and it asks you before
 anything reaches your project&#39;s own work or GitHub. Adding the starter can take
 several sittings; you can stop at any point, and the next conversation picks up
 where the last one stopped.</p>
+<h2 id="sending-lessons-from-a-project">Sending lessons from a project</h2>
+<p>This is for a project that keeps its own way of working, when you only want to
+pass on what it learned, so the next project made from the starter begins with
+it. Nothing is added to your project and nothing in it changes. Steps 1 to 4
+come first, as they are written, then open your project&#39;s folder as the first
+step of <a href="#a-project-you-already-have">a project you already have</a> says, and send
+Claude this message:</p>
+<pre tabindex="0"><code>I only want to send lessons from this project back to the project starter, and
+nothing in this project may change. I am not technical, so explain each step in
+plain words before you do it. Install Git, GitHub&#39;s command line tool (gh), and
+Node.js for my user only, wherever that is possible, if any of them is missing,
+and sign me in to GitHub through the browser with a one-time code that you show
+me. Then clone the project starter with &quot;gh repo clone
+noelito-projects/project-starter&quot; into a short temporary folder outside this
+project, never into it. Read starter-kit/library/skills/gather-lessons/SKILL.md
+in that clone and follow it from its beginning.</code></pre>
+<p>What happens next: Claude says what it will read, and asks whether it may also
+read your past conversations with Claude about this project, which is where most
+lessons are. It then looks for what any project would want, the skills your
+project wrote above all, takes out every private detail, and shows you each
+lesson before anything is sent. You say yes or no to each one.</p>
 <h2 id="if-something-goes-wrong">If something goes wrong</h2>
 <ul>
 <li><strong>Claude asks you to wait</strong> because you have used your plan&#39;s share for now:

@@ -1,0 +1,1164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; style-src &#39;self&#39; https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src &#39;self&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+<!-- frame-ancestors is left out of the policy above: a browser ignores it in a meta tag, and GitHub Pages sends no header of our choosing. -->
+<title>Choose what to take</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;1,400&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="guide.css">
+</head>
+<body>
+<main class="guide">
+<h1>Choose what to take from the starter</h1>
+<p>The starter is a set of helpers, checks, and know-how that Claude works with on a project. A project you already have can take all of it, or only the parts you choose from this page.</p>
+<p>Each part says what it is for, what it gives you, and what it adds to your project. Some parts cannot work without others, so they bring those along. You can come back and add more later.</p>
+<p>Two words come up often. A check looks over the work before it is saved, and a guard steps in before Claude takes a step it should not.</p>
+<section class="feature-group" id="group-core">
+<h2>Always included</h2>
+<p>These come with every choice, because they keep private details out of what is saved and keep anything from reaching real people without your say, and the rest of the starter relies on them.</p>
+<section class="feature" id="privacy-check">
+<h3>The privacy check</h3>
+<p class="always-included">Always included</p>
+<dl>
+<dt>What it is for</dt>
+<dd>It stops private details from being saved where other people could see them.</dd>
+<dt>What it gives you</dt>
+<dd>Before any work is saved, it looks for names, addresses, and other private words you list, and refuses to save while one is there.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 3 files, and switches on 1 check.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="production-guard">
+<h3>The guard on the live version</h3>
+<p class="always-included">Always included</p>
+<dl>
+<dt>What it is for</dt>
+<dd>It keeps anything from reaching the version real people use without your say.</dd>
+<dt>What it gives you</dt>
+<dd>Claude asks you before any step that would change what real people see, and helpers working for Claude are refused outright.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 3 files, and switches on 1 guard.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="backslash-guard">
+<h3>The guard against broken commands</h3>
+<p class="always-included">Always included</p>
+<dl>
+<dt>What it is for</dt>
+<dd>It catches a kind of command that silently does something other than what was meant on Windows.</dd>
+<dt>What it gives you</dt>
+<dd>A command written in a way that would quietly misbehave is stopped, with the reason, before it runs.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 2 files, and switches on 1 guard.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="hook-runner">
+<h3>The guards&#39; starter</h3>
+<p class="always-included">Always included</p>
+<dl>
+<dt>What it is for</dt>
+<dd>It starts each guard, and refuses the work when a guard cannot run.</dd>
+<dt>What it gives you</dt>
+<dd>A guard that cannot start never lets the work through by accident. It also holds the one list of which guards are switched on.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 4 files.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="hook-input">
+<h3>The guards&#39; shared reader</h3>
+<p class="always-included">Always included</p>
+<dl>
+<dt>What it is for</dt>
+<dd>It reads what Claude is about to do, the same way for every guard.</dd>
+<dt>What it gives you</dt>
+<dd>Every guard understands each step the same way, so none of them is fooled by a step another one would catch.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 file.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="project-settings">
+<h3>The project&#39;s settings</h3>
+<p class="always-included">Always included</p>
+<dl>
+<dt>What it is for</dt>
+<dd>It reads the one record that says what your project is, such as its stage and its language.</dd>
+<dt>What it gives you</dt>
+<dd>Every helper agrees on the same facts about your project, because each reads them from one place.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 3 files.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="test-helpers">
+<h3>The shared test pieces</h3>
+<p class="always-included">Always included</p>
+<dl>
+<dt>What it is for</dt>
+<dd>They are the common parts the starter&#39;s own checks are built from.</dd>
+<dt>What it gives you</dt>
+<dd>The checks that prove each feature works can run in your project without touching your real files.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 3 files.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="git-settings">
+<h3>The saving settings</h3>
+<p class="always-included">Always included</p>
+<dl>
+<dt>What it is for</dt>
+<dd>They keep files saved the same way on every computer, and keep private files from being saved at all.</dd>
+<dt>What it gives you</dt>
+<dd>The guards run on Windows, a Mac, and Linux alike, and your private word list never leaves your computer.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 2 files.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+</section>
+<section class="feature-group" id="group-more">
+<h2>More you can choose</h2>
+<p>Take any of these, or none of them. Each one says what else it brings with it.</p>
+<section class="feature" id="plan-first-guard">
+<h3>Plan before building</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It holds back new code until a plan is approved.</dd>
+<dt>What it gives you</dt>
+<dd>Nothing gets built on a guess: Claude writes the plan with you first, and code waits until you approve it. In a project with code already, it holds that code back until then too.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 2 files, and switches on 1 guard.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="keep-working">
+<h3>Keep working while you are away</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It keeps Claude working through the plan when you say to continue and walk away.</dd>
+<dt>What it gives you</dt>
+<dd>Claude does not stop halfway and wait. It stops only when it says, in plain words, what blocks everything that is left.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 2 files, and switches on 1 guard.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="session-start">
+<h3>A summary at the start of each session</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It tells Claude where the project stands each time a conversation begins.</dd>
+<dt>What it gives you</dt>
+<dd>Claude starts each conversation knowing the stage, what comes next, and what is due, without spending time and usage looking around.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 4 files, and switches on 1 guard.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#plan-archive">The plan and its archive</a></li>
+<li><a href="#work-measurements">Measuring the work</a></li>
+<li><a href="#progress-pages">Progress pages</a></li>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#editor-settings">Editor settings</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="plan-archive">
+<h3>The plan and its archive</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It keeps the plan to the work that is left, and moves finished work to an archive.</dd>
+<dt>What it gives you</dt>
+<dd>The plan stays short enough to read in full, and nothing finished is lost.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 5 files, and switches on 1 check.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#work-measurements">Measuring the work</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="work-measurements">
+<h3>Measuring the work</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It reads Claude&#39;s own records of each session, to know how long work took and which model did it.</dd>
+<dt>What it gives you</dt>
+<dd>Hours and usage are measured, never estimated, so the numbers other features show you are real.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 2 files.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="progress-pages">
+<h3>Progress pages</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>They show how far the project has come and what it has cost.</dd>
+<dt>What it gives you</dt>
+<dd>A page in your own language says how much of the plan is done and how many hours it took, updated each time work is saved.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 9 files, and switches on 1 check.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#plan-archive">The plan and its archive</a></li>
+<li><a href="#work-measurements">Measuring the work</a></li>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="message-catalogs">
+<h3>Words kept in one place</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It keeps every word a person reads in a list of its own, apart from the code.</dd>
+<dt>What it gives you</dt>
+<dd>Your app can speak a second language later by adding one list, without searching the code for every sentence.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 3 files.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="doctor">
+<h3>The computer check</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It checks the tools your project needs on this computer, and says what to install next.</dd>
+<dt>What it gives you</dt>
+<dd>You learn in plain words what is missing and who does each step, so setting up a computer does not stall on a guess.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 5 files.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#session-start">A summary at the start of each session</a></li>
+<li><a href="#plan-archive">The plan and its archive</a></li>
+<li><a href="#work-measurements">Measuring the work</a></li>
+<li><a href="#progress-pages">Progress pages</a></li>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#setup-guide">The newcomer&#39;s setup guide</a></li>
+<li><a href="#editor-settings">Editor settings</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="setup-guide">
+<h3>The newcomer&#39;s setup guide</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It is a guide with pictures for setting up a computer before working on the project for the first time.</dd>
+<dt>What it gives you</dt>
+<dd>Somebody new can get ready on their own, and anything that looked different from the guide is sent back so the guide improves.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 11 files and 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#plan-archive">The plan and its archive</a></li>
+<li><a href="#work-measurements">Measuring the work</a></li>
+<li><a href="#progress-pages">Progress pages</a></li>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#editor-settings">Editor settings</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="document-checks">
+<h3>The documents check</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It holds the project&#39;s documents to the conventions they agree on.</dd>
+<dt>What it gives you</dt>
+<dd>A broken convention in a document is caught before it is saved, so nobody has to remember every rule.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 2 files, and switches on 1 check.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#plan-archive">The plan and its archive</a></li>
+<li><a href="#work-measurements">Measuring the work</a></li>
+<li><a href="#progress-pages">Progress pages</a></li>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#setup-guide">The newcomer&#39;s setup guide</a></li>
+<li><a href="#editor-settings">Editor settings</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="writing-checks">
+<h3>Spelling, abbreviation, and link checks</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>They check spelling, unexplained short forms, and links in everything written.</dd>
+<dt>What it gives you</dt>
+<dd>Documents stay in one spelling, every word is spelled out, and no link leads nowhere.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 8 files, and switches on 2 checks.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="formatting">
+<h3>Tidy layout</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It lays out every file the same way, automatically.</dd>
+<dt>What it gives you</dt>
+<dd>Changes show only what really changed, never somebody&#39;s spacing, and nobody argues about layout.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 3 files, and switches on 1 check.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="type-checks">
+<h3>The code check</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It checks that each piece of code is called with the kind of value it expects.</dd>
+<dt>What it gives you</dt>
+<dd>A mistake that would only show up when somebody uses the app is caught before the work is saved.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 file, and switches on 1 check.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="editor-settings">
+<h3>Editor settings</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>They set up the code editor with the project&#39;s tasks and a color of its own.</dd>
+<dt>What it gives you</dt>
+<dd>Every common job is one click away, and each project&#39;s window can be told apart at a glance.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 5 files.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="proof-and-push-gate">
+<h3>Proof before sharing</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It records that the checks passed on the exact work being shared.</dd>
+<dt>What it gives you</dt>
+<dd>Work is never sent on without proof that it passed, and nobody has to run every check twice to trust it.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 5 files.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#plan-archive">The plan and its archive</a></li>
+<li><a href="#work-measurements">Measuring the work</a></li>
+<li><a href="#progress-pages">Progress pages</a></li>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="manager-and-workers">
+<h3>A manager and its workers</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It lets the main conversation hand pieces of work to helpers and check what they bring back.</dd>
+<dt>What it gives you</dt>
+<dd>Large plans move faster and cost less, because each helper sees only its own piece and every claim is checked before it is accepted.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 4 files and 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#plan-archive">The plan and its archive</a></li>
+<li><a href="#work-measurements">Measuring the work</a></li>
+<li><a href="#progress-pages">Progress pages</a></li>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#proof-and-push-gate">Proof before sharing</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="engineering-rules">
+<h3>Rules for building</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>They are the lessons earlier projects paid for, each with the reason behind it.</dd>
+<dt>What it gives you</dt>
+<dd>Claude follows them while building, and the rule that applies appears on its own the moment a file it covers is opened.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 5 files and 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="how-we-work">
+<h3>How the work is run</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It explains the working method the starter follows, and why.</dd>
+<dt>What it gives you</dt>
+<dd>Anybody joining the project, or a new conversation, can read how decisions are made and where everything is kept.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 3 files.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="decision-records">
+<h3>Decision records</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>They write down each choice that was argued: what was chosen, why, and what was turned down.</dd>
+<dt>What it gives you</dt>
+<dd>Nobody undoes a choice by accident later, because the reasons and the alternative that lost are written next to it.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 file and 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="skill-library">
+<h3>The skill library</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It keeps specialist knowledge on a shelf until the plan needs it, and brings it in when it does.</dd>
+<dt>What it gives you</dt>
+<dd>Claude knows about the things your project uses, without paying every day for knowledge it does not use.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 10 files and 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="personal-skills">
+<h3>Your personal copies of skills</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It refreshes the copies of skills you keep for all your projects from the library.</dd>
+<dt>What it gives you</dt>
+<dd>Your own copies stay current, and you see what would change before anything does.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 2 files.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#plan-archive">The plan and its archive</a></li>
+<li><a href="#work-measurements">Measuring the work</a></li>
+<li><a href="#progress-pages">Progress pages</a></li>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#setup-guide">The newcomer&#39;s setup guide</a></li>
+<li><a href="#document-checks">The documents check</a></li>
+<li><a href="#editor-settings">Editor settings</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="ask-the-owner">
+<h3>Questions asked well</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It is how Claude puts a question or a decision in front of you.</dd>
+<dt>What it gives you</dt>
+<dd>One question at a time, in plain words, with what each choice costs and a recommendation, and every answer written down.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="change-the-plan">
+<h3>Changing the plan</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It turns a new idea, a request, or a change of mind into planned work before any building starts.</dd>
+<dt>What it gives you</dt>
+<dd>Nothing you ask for is lost or half-done, because it becomes work in the plan with a clear way to tell when it is finished.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="clean-commits">
+<h3>Tidy history</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It saves finished work in small steps, one subject each.</dd>
+<dt>What it gives you</dt>
+<dd>The history of the project reads as a clear story, and any one change can be found or undone on its own.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="consensus-review">
+<h3>Reviews by more than one reviewer</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It has a change reviewed by several reviewers and settles their findings into one report.</dd>
+<dt>What it gives you</dt>
+<dd>You get one list of what really needs fixing, with disagreements already settled.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 file and 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="full-review">
+<h3>A review of the whole project</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It reviews everything in the project from time to time, and judges whether the documents have grown too long.</dd>
+<dt>What it gives you</dt>
+<dd>Problems that no single change shows are found, and you get a report behind a link before anything is changed.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="design-mockup">
+<h3>Design proposals</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It draws every screen of the project, in every state, as a proposal to look at before anything is built.</dd>
+<dt>What it gives you</dt>
+<dd>You see and approve the look of the whole thing first, and the approved design becomes the values the app is built from.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 file and 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="github-setup">
+<h3>Help with GitHub</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It puts the project on GitHub, where its history is kept safe, and keeps it working there.</dd>
+<dt>What it gives you</dt>
+<dd>Step-by-step help from creating an account onward, and answers for the problems people usually meet.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="go-live">
+<h3>Going live safely</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It moves work from the trial version to the one real people use, safely.</dd>
+<dt>What it gives you</dt>
+<dd>A backup comes first, every step is written down, and what real people see is checked after each release.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 file and 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="improve-the-starter">
+<h3>Sending lessons back</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It sends a lesson learned in your project back to the starter, with everything private taken out.</dd>
+<dt>What it gives you</dt>
+<dd>Later projects start with what yours learned, and nothing private leaves your project.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="keep-docs-current">
+<h3>Documents kept current</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It keeps the project&#39;s documents true as the work changes.</dd>
+<dt>What it gives you</dt>
+<dd>Each step updates its documents as it goes, so what you read about the project matches what was built.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="kickoff">
+<h3>Planning a new project</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It takes a new project from nothing to an approved plan, through an interview with you.</dd>
+<dt>What it gives you</dt>
+<dd>A plan you have read and approved, written from your own answers, before anything is built.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 3 files and 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#session-start">A summary at the start of each session</a></li>
+<li><a href="#plan-archive">The plan and its archive</a></li>
+<li><a href="#work-measurements">Measuring the work</a></li>
+<li><a href="#progress-pages">Progress pages</a></li>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#doctor">The computer check</a></li>
+<li><a href="#setup-guide">The newcomer&#39;s setup guide</a></li>
+<li><a href="#editor-settings">Editor settings</a></li>
+<li><a href="#ask-the-owner">Questions asked well</a></li>
+<li><a href="#github-setup">Help with GitHub</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="prove-it-first">
+<h3>Prove the risky part first</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It tests the riskiest assumption a plan rests on before anything is built on it.</dd>
+<dt>What it gives you</dt>
+<dd>You learn early, and cheaply, whether the idea the plan depends on really works.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="token-tune-up">
+<h3>Usage tune-ups</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It checks every two weeks where Claude&#39;s usage went, and what can be trimmed.</dd>
+<dt>What it gives you</dt>
+<dd>Your usage lasts longer, because the biggest costs are found and you decide which changes to make.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 2 files and 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#work-measurements">Measuring the work</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="conversation-reader">
+<h3>Reading past conversations</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It reads a project&#39;s earlier Claude conversations on this computer, a little at a time, when the person agrees.</dd>
+<dt>What it gives you</dt>
+<dd>Lessons that cost something to learn, such as what broke and what was tried, can be found and kept without anyone rereading old chats.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 3 files.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#work-measurements">Measuring the work</a></li>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="update-from-the-starter">
+<h3>Updates from the starter</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It brings newer versions of what you took from the starter into your project.</dd>
+<dt>What it gives you</dt>
+<dd>You hear in plain words what an update brings before deciding, and your own changes are kept.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="validate-input">
+<h3>Checking what comes in</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It checks every value that comes into the app before the app uses it.</dd>
+<dt>What it gives you</dt>
+<dd>Bad or unexpected data is refused with a clear reason, instead of quietly causing harm.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 2 files and 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+<section class="feature" id="feature-list">
+<h3>The list of features</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It is the one list of everything the starter offers, with these words for each.</dd>
+<dt>What it gives you</dt>
+<dd>The menu you are reading, and anything that brings parts of the starter in, agree on what each part is and what it needs.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 2 files.</dd>
+<dt>It brings with it</dt>
+<dd>Nothing beyond what is always included.</dd>
+</dl>
+</section>
+</section>
+<section class="feature-group" id="group-library">
+<h2>Knowledge for particular kinds of project</h2>
+<p>Each of these waits on a shelf until your plan needs it, such as an Android app or a website, so Claude does not carry it around before then.</p>
+<section class="feature" id="adopt-the-starter">
+<h3>Taking on the starter</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It brings the starter into a project that already exists, without losing anything the project has.</dd>
+<dt>What it gives you</dt>
+<dd>Your project gets the parts you choose, with every file checked against what you already have, on a separate branch until you approve it.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 4 files and 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="3d-models-by-script">
+<h3>Printable models from a script</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It builds models for a three-dimensional printer from a script rather than by hand.</dd>
+<dt>What it gives you</dt>
+<dd>Models that can be changed by editing a few values, ready to load into the printer&#39;s software.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="affinity-scripting">
+<h3>Affinity documents from a script</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It builds or edits Affinity Publisher, Photo, or Designer documents from a script.</dd>
+<dt>What it gives you</dt>
+<dd>Layouts rebuilt from your source text without redoing them by hand.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="android-native">
+<h3>Android apps</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It builds an Android app in Android&#39;s own language.</dd>
+<dt>What it gives you</dt>
+<dd>An app built and tested from the command line on Windows, with no administrator rights needed.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="apps-for-children">
+<h3>Apps for children</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It designs an app that anyone under eighteen will use.</dd>
+<dt>What it gives you</dt>
+<dd>Words, sizes, and controls that suit every age from a child who cannot read yet to a teenager, and the rules that protect them.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="bambu-studio-3mf">
+<h3>Bambu Studio print files</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It reads and changes Bambu Studio&#39;s print project files from a script.</dd>
+<dt>What it gives you</dt>
+<dd>Print settings and layouts changed in bulk, without opening each file.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="borrowed-and-generated-assets">
+<h3>Fonts, icons, and pictures</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It brings in fonts, icons, and pictures made by other people, and makes sets of pictures with an image generator.</dd>
+<dt>What it gives you</dt>
+<dd>Every license is respected, the project stays small, and generated pictures look like one set.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="claude-multiple-accounts">
+<h3>More than one Claude account</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It uses several Claude subscriptions one after another.</dd>
+<dt>What it gives you</dt>
+<dd>Work carries on when one account runs out of usage, with its pace spread across them.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="cloudflare-environments">
+<h3>Cloudflare trial and live versions</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It keeps a Cloudflare project&#39;s trial version and live version apart.</dd>
+<dt>What it gives you</dt>
+<dd>A change meant for the trial version never reaches real people by accident.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="cloudflare-plugin">
+<h3>Cloudflare&#39;s own skills</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It switches on Cloudflare&#39;s own skills for a project that uses Cloudflare.</dd>
+<dt>What it gives you</dt>
+<dd>Claude knows Cloudflare well where it is needed, without paying for that knowledge elsewhere.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="cloudflare-site">
+<h3>A website with a private area on Cloudflare</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It builds a website with a private area behind sign-in, hosted on Cloudflare.</dd>
+<dt>What it gives you</dt>
+<dd>A fast public site and a separate private area, inside Cloudflare&#39;s free limits.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="domains-and-dns">
+<h3>Names and domains</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It finds and sets up a web address for the project.</dd>
+<dt>What it gives you</dt>
+<dd>A name checked as free before anybody recommends it, with the price told to you before anything is bought.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="gather-lessons">
+<h3>Sending lessons without taking the starter on</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It looks through a project you already have for lessons the starter could learn, and changes nothing in it.</dd>
+<dt>What it gives you</dt>
+<dd>What your project learned the hard way, its skills above all, can help every later project, and nothing is sent until you have seen it with every private detail taken out.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#work-measurements">Measuring the work</a></li>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#improve-the-starter">Sending lessons back</a></li>
+<li><a href="#conversation-reader">Reading past conversations</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="instagram-publishing">
+<h3>Instagram</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It connects an app to Instagram to read an account&#39;s posts or publish to it.</dd>
+<dt>What it gives you</dt>
+<dd>A connection set up the way Instagram allows, and kept safe once it works.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="ios-native">
+<h3>iPhone and iPad apps</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It builds an iPhone and iPad app in Apple&#39;s own language.</dd>
+<dt>What it gives you</dt>
+<dd>An app built with Apple&#39;s own tools, from the first build to testing with real people.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="linux-test-machines">
+<h3>Clean Linux computers for testing</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It builds fresh Ubuntu, Fedora, and Debian computers inside your own Windows computer, to test on.</dd>
+<dt>What it gives you</dt>
+<dd>Setup steps tested on Linux the way a newcomer meets them, and each computer reset to clean in seconds.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+<li><a href="#windows-test-machine">A clean Windows computer for testing</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="print-and-pdf-export">
+<h3>Printing and PDF files</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It makes a web page print, and save as PDF, the way it was meant to.</dd>
+<dt>What it gives you</dt>
+<dd>Pages that print centered, with front and back lined up, checked on real PDF files.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="rust-core">
+<h3>Shared logic for every platform</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It writes the logic two platforms both need once, in one shared library.</dd>
+<dt>What it gives you</dt>
+<dd>Each app draws its own screens, and the rules behind them are written and tested only once.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 file and 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="static-site-starter">
+<h3>A content website</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It sets up a website built from content you write, hosted on Cloudflare.</dd>
+<dt>What it gives you</dt>
+<dd>A fast site that remembers each visitor&#39;s place, from a pattern an earlier project proved.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="testing-real-artifacts">
+<h3>Testing the real thing</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It tests the thing that actually runs, on every platform, with nothing faked.</dd>
+<dt>What it gives you</dt>
+<dd>A passing test means the real app works, not a stand-in for it.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="two-languages">
+<h3>A second language</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It adds a second language to an app.</dd>
+<dt>What it gives you</dt>
+<dd>The whole app read in another language, with the spelling check covering it too.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="visual-studio-code-window-color">
+<h3>A color for each window</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It colors each project&#39;s editor window from one base color.</dd>
+<dt>What it gives you</dt>
+<dd>Each project can be told apart at a glance.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="web-app">
+<h3>Web apps</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It builds a web app a person signs in to and can install on a phone or a computer.</dd>
+<dt>What it gives you</dt>
+<dd>A fast app with no outside code to keep updated, and strict protection against common attacks.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="windows-native">
+<h3>Windows apps</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It builds a Windows app with Microsoft&#39;s own tools.</dd>
+<dt>What it gives you</dt>
+<dd>A real Windows app that shares its logic with the project&#39;s other apps.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="windows-test-machine">
+<h3>A clean Windows computer for testing</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It builds a fresh Windows computer inside your own, to test on.</dd>
+<dt>What it gives you</dt>
+<dd>Setup steps tested the way a newcomer meets them, and the computer reset to clean in seconds.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="youtube-embedding">
+<h3>YouTube videos</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It plays YouTube videos inside an app the way YouTube allows.</dd>
+<dt>What it gives you</dt>
+<dd>Videos that play reliably, without breaking YouTube&#39;s rules.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#skill-library">The skill library</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
+</section>
+</main>
+</body>
+</html>

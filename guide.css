@@ -255,3 +255,49 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* The menu of the starter's features (features.html), built beside the guide
+ * by features-page.mjs. Each feature is a section of labels and their values,
+ * and the mark on a part that is always included is a quiet label of its own. */
+.feature {
+  margin-block: var(--space-large);
+}
+
+.feature > h3 {
+  margin-block: 0 var(--space-small);
+}
+
+.always-included {
+  display: inline-block;
+  margin-block: 0 var(--space-small);
+  padding-inline: var(--space-small);
+  border: var(--rule-width) solid var(--color-accent);
+  border-radius: var(--radius);
+  color: var(--color-accent);
+  font-size: var(--size-small);
+  font-weight: var(--weight-strong);
+}
+
+dl {
+  margin-block: 0;
+}
+
+dt {
+  margin-block: var(--space-small) 0;
+  color: var(--color-muted);
+  font-size: var(--size-small);
+  font-weight: var(--weight-strong);
+}
+
+dd {
+  margin-inline: 0;
+  margin-block: 0;
+}
+
+dd > ul {
+  margin-block: 0;
+}
+
+dd li {
+  margin-block: 0;
+}
