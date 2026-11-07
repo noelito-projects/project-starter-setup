@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; style-src &#39;self&#39; https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src &#39;self&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+<!-- frame-ancestors is left out of the policy above: a browser ignores it in a meta tag, and GitHub Pages sends no header of our choosing. -->
+<title>More setup help</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;1,400&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="guide.css">
+</head>
+<body>
+<main class="guide">
+<h1 id="more-setup-help">More setup help</h1>
+<p>The setup guide, <a href="index.html">START-HERE.md</a>, keeps to the steps most people
+follow. This page holds the rest: what is different on Fedora and Debian, and
+the two other ways in, for a project you already have. Each part is linked from
+the step where it can come up.</p>
+<h2 id="visual-studio-code-on-fedora-or-debian">Visual Studio Code on Fedora or Debian</h2>
+<p>On Fedora or Debian, this takes the place of App Center in
+<a href="index.html#step-2-install-visual-studio-code">step 2</a>.</p>
+<ul>
+<li><p><strong>On Fedora or Debian:</strong> the window that adds programs, called <strong>Software</strong>,
+does not offer Visual Studio Code, so it comes from Microsoft&#39;s website
+instead. Press the Super key and click <strong>Firefox</strong>, the web browser, first in
+the row of icons along the bottom of the screen. Go to
+<a href="https://code.visualstudio.com">code.visualstudio.com</a> and press <strong>Download</strong>
+at the top right of the page. On the page that opens, in the box marked
+<strong>Linux</strong>, press <strong>Red Hat/Fedora</strong> on Fedora, or <strong>Debian/Ubuntu</strong> on Debian.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/download-page-linux.png" alt="The download page&#39;s Linux box, marked &quot;Your OS&quot;, with its two buttons, Debian/Ubuntu and Red Hat/Fedora, marked"></p>
+<p>Firefox shows the download in a small panel at its top right. When the panel
+says <strong>Completed</strong>, click the file&#39;s name, which begins with <code>code</code>.
+<strong>Software</strong> opens on a page titled <strong>code</strong>, marked <strong>Local file</strong>: press
+<strong>Install</strong>. It may say <strong>Potentially Unsafe</strong> and <strong>Provided by a third
+party</strong>, which only means that the program comes from Microsoft rather than
+from Fedora or Debian.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/software-install-local-file.png" alt="Software&#39;s page for &quot;code&quot;, a local file, with the Install button marked, and Potentially Unsafe, provided by a third party, below"></p>
+<p>A window titled <strong>Authentication Required</strong> asks for your password: type the
+one you use to sign in to this computer, and press Enter.</p></li>
+<li><p><strong>Also on Debian:</strong> about a minute later, a window titled <strong>Configuring code</strong>
+asks <strong>Add Microsoft apt repository for Visual Studio Code?</strong>, with its box
+ticked. Leave it ticked, so Visual Studio Code keeps itself up to date, and
+press <strong>Next</strong> at its top right. The install waits until you do.</p>
+<p><img src="starter-kit/docs/setup-guide-pictures/configuring-code-repository.png" alt="The Configuring code window asking &quot;Add Microsoft apt repository for Visual Studio Code?&quot;, its box ticked, with Next marked"></p></li>
+<li><p>When it is done, Debian&#39;s page shows <strong>Open</strong>: press it. Fedora&#39;s shows only
+<strong>Uninstall…</strong>: close the window, and open Visual Studio Code as item 5 of
+<a href="index.html#step-2-install-visual-studio-code">step 2</a> says.</p></li>
+</ul>
+<h2 id="a-project-you-already-have">A project you already have</h2>
+<p>These take the place of steps 5 and 6 when you are adding the starter to a
+project of your own. Steps 1 to 4 come first, as they are written.</p>
+<ol>
+<li>In Visual Studio Code, open the <strong>File</strong> menu and choose <strong>Open Folder</strong>,
+then find your project&#39;s folder, click it once, and press the button that
+confirms the choice. If Visual Studio Code asks whether you trust the files,
+or shows <strong>Restricted Mode</strong>, trust them as
+<a href="index.html#step-5-make-a-folder-for-your-project">step 5</a> shows. You know
+this worked when your project&#39;s own files are listed on the left.</li>
+<li>Open the Claude panel, copy the message below exactly as it is, paste it into
+the box at the bottom, and press Enter.</li>
+</ol>
+<pre tabindex="0"><code>I am adding App Architect to this project, which already exists. I am
+not technical, so explain each step in plain words before you do it. Install
+Git, GitHub&#39;s command line tool (gh), and Node.js for my user only, wherever
+that is possible, if any of them is missing, and sign me in to GitHub through
+the browser with a one-time code that you show me. Then clone App Architect
+with &quot;gh repo clone noelito-projects/app-architect&quot; into a temporary folder
+outside this project, never into it, and change nothing in this project yet.
+Read starter-kit/library/skills/adopt-the-starter/SKILL.md in that clone
+and follow it from its beginning: it says what to ask me and what to do, and
+it keeps this project&#39;s own branches untouched until I say yes. I may want only
+some parts of the starter, so show me its menu of features before bringing
+anything in.</code></pre>
+<p>What happens next: Claude asks you a few questions, one at a time, mostly to
+check that it understood what your project&#39;s own files already say, and shows
+you the menu so you can take all of the starter or only some parts. It then
+works in a second folder of its own beside your project&#39;s, so your project keeps
+working as it does now while the starter goes in, and it asks you before
+anything reaches your project&#39;s own work or GitHub. Adding the starter can take
+several sittings; you can stop at any point, and the next conversation picks up
+where the last one stopped.</p>
+<h2 id="sending-lessons-from-a-project">Sending lessons from a project</h2>
+<p>This is for a project that keeps its own way of working, when you only want to
+pass on what it learned, so the next project made from the starter begins with
+it. Nothing is added to your project and nothing in it changes. Steps 1 to 4
+come first, as they are written, then open your project&#39;s folder as the first
+step of <a href="#a-project-you-already-have">a project you already have</a> says, and send
+Claude this message:</p>
+<pre tabindex="0"><code>I only want to send lessons from this project back to App Architect, and
+nothing in this project may change. I am not technical, so explain each step in
+plain words before you do it. Install Git, GitHub&#39;s command line tool (gh), and
+Node.js for my user only, wherever that is possible, if any of them is missing,
+and sign me in to GitHub through the browser with a one-time code that you show
+me. Then clone App Architect with &quot;gh repo clone
+noelito-projects/app-architect&quot; into a short temporary folder outside this
+project, never into it. Read starter-kit/library/skills/gather-lessons/SKILL.md
+in that clone and follow it from its beginning.</code></pre>
+<p>What happens next: Claude says what it will read, and asks whether it may also
+read your past conversations with Claude about this project, which is where most
+lessons are. It then looks for what any project would want, the skills your
+project wrote above all, takes out every private detail, and shows you each
+lesson before anything is sent. You say yes or no to each one.</p>
+</main>
+</body>
+</html>
