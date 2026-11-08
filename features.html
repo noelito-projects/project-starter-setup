@@ -113,7 +113,7 @@
 <dt>What it gives you</dt>
 <dd>The checks that prove each feature works can run in your project without touching your real files.</dd>
 <dt>What it adds to your project</dt>
-<dd>It adds 5 files.</dd>
+<dd>It adds 7 files.</dd>
 <dt>It brings with it</dt>
 <dd>Nothing beyond what is always included.</dd>
 </dl>
@@ -412,6 +412,23 @@
 <li><a href="#progress-pages">Progress pages</a></li>
 <li><a href="#message-catalogs">Words kept in one place</a></li>
 <li><a href="#proof-and-push-gate">Proof before sharing</a></li>
+<li><a href="#wait-for-agent">Waiting for a helper to finish</a></li>
+<li><a href="#validate-input">Checking what comes in</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="wait-for-agent">
+<h3>Waiting for a helper to finish</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It lets the main conversation wait until a helper it started has finished, and see what it changed.</dd>
+<dt>What it gives you</dt>
+<dd>No turn is spent guessing whether a helper is still working, and a helper that stopped early is noticed rather than waited on for good.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 3 files.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#validate-input">Checking what comes in</a></li>
 </ul></dd>
 </dl>
 </section>
@@ -550,6 +567,49 @@
 <dd>Nothing beyond what is always included.</dd>
 </dl>
 </section>
+<section class="feature" id="clear-safely">
+<h3>Starting a fresh chat safely</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>It saves what a chat learned, and all of its work, before the chat is cleared.</dd>
+<dt>What it gives you</dt>
+<dd>Starting a fresh chat never loses a lesson or unsaved work, and a chat whose work cannot be saved is not cleared.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 2 files and 1 folder.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#plan-archive">The plan and its archive</a></li>
+<li><a href="#work-measurements">Measuring the work</a></li>
+<li><a href="#progress-pages">Progress pages</a></li>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#proof-and-push-gate">Proof before sharing</a></li>
+</ul></dd>
+</dl>
+</section>
+<section class="feature" id="start-of-chat-check">
+<h3>Catching a chat closed without saving</h3>
+<dl>
+<dt>What it is for</dt>
+<dd>When a new chat opens, it finds the last chat that was closed without saving what it learned, and has a background copy of it write that down.</dd>
+<dt>What it gives you</dt>
+<dd>A chat closed in a hurry still leaves its lessons behind, waiting for the next safe clear to record them.</dd>
+<dt>What it adds to your project</dt>
+<dd>It adds 4 files, and switches on 1 guard.</dd>
+<dt>It brings with it</dt>
+<dd><ul>
+<li><a href="#session-start">A summary at the start of each session</a></li>
+<li><a href="#plan-archive">The plan and its archive</a></li>
+<li><a href="#work-measurements">Measuring the work</a></li>
+<li><a href="#progress-pages">Progress pages</a></li>
+<li><a href="#message-catalogs">Words kept in one place</a></li>
+<li><a href="#editor-settings">Editor settings</a></li>
+<li><a href="#proof-and-push-gate">Proof before sharing</a></li>
+<li><a href="#clear-safely">Starting a fresh chat safely</a></li>
+<li><a href="#validate-input">Checking what comes in</a></li>
+<li><a href="#feature-list">The list of features</a></li>
+</ul></dd>
+</dl>
+</section>
 <section class="feature" id="consensus-review">
 <h3>Reviews by more than one reviewer</h3>
 <dl>
@@ -567,6 +627,7 @@
 <li><a href="#progress-pages">Progress pages</a></li>
 <li><a href="#message-catalogs">Words kept in one place</a></li>
 <li><a href="#editor-settings">Editor settings</a></li>
+<li><a href="#wait-for-agent">Waiting for a helper to finish</a></li>
 <li><a href="#validate-input">Checking what comes in</a></li>
 <li><a href="#feature-list">The list of features</a></li>
 </ul></dd>
